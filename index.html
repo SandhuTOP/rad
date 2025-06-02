@@ -1,0 +1,23 @@
+# Year 9 Subject Selection Program
+
+# List of available subjects
+subjects = ["Math", "Science", "English", "History", "Geography", "Coding", "Creative Writing", "Game Development"]
+
+# Ask user to select subjects
+print("Select up to 5 subjects for Year 9:")
+selected_subjects = []
+
+for i in range(5):
+    subject = input(f"Enter subject {i+1}: ")
+    if subject in subjects:
+        selected_subjects.append(subject)
+    else:
+        print("Invalid subject. Please choose from the available list.")
+
+# Generate summary
+print("\nYour Year 9 Subject Choices:")
+for subject in selected_subjects:
+    print(f"- {subject}")
+
+print("\nSummary:")
+print(f"In Year 9, I want to explore {', '.join(selected_subjects)} to enhance my skills and knowledge.")
